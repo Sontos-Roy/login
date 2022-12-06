@@ -15,7 +15,7 @@
     position: absolute;
     height: 100%;
     min-width: 44%;
-    background: url(bg.png) no-repeat scroll 0 0 / 100% 100%;
+    background: url(bg.jfif) no-repeat scroll 0 0 / 100% 100%;
     bottom: 0;
     left: 0;
 }
@@ -24,7 +24,7 @@
     position: absolute;
     height: 100%;
     min-width: 100%;
-    background: url(bg.png) no-repeat scroll 0 0 / 100% 100%;
+    background: url(bg.jfif) no-repeat scroll 0 0 / 100% 100%;
     bottom: 0;
     right: 0;
     z-index: -1;
@@ -112,11 +112,7 @@ td>button{
     width: auto;
     font-size: 13px;
 }
-.logo{
-    position: absolute;
-    bottom: 10px;
-    right: 70%;
-}
+
 
 @media (max-width: 600px) {
     

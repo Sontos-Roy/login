@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+.wrapper::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    min-width: 44%;
+    background: url(bg.png) no-repeat scroll 0 0 / 100% 100%;
+    bottom: 0;
+    left: 0;
+}
+.wrapper::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    min-width: 100%;
+    background: url(bg.png) no-repeat scroll 0 0 / 100% 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.container{
+    width: 100%;
+    padding: 20px;
+}
+.col-7{
+    width: 80%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+}
+.row .col{
+    width: 50%;
+    padding: 10px;
+}
+h1{
+    padding-top: 10vh;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 15px 14px;
+    border: none;
+    border: 1px solid #CCCCCC;
+    margin: 10px 0px;
+    color: #333;
+    font-weight: 500;
+    font-size: 17px;
+    background: #F6F6F6;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+input:focus{
+    outline: 0;
+}
+input:focus::placeholder{
+    color: transparent;
+}
+button{
+    background: #177CF4;
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    width: 125px;
+    margin: 0 auto;
+}
+button:hover{
+    background-color: blue;
+}
+table{
+    width: 100%;
+    margin-top: 20px;
+}
+table *{
+    font-size: 13px;
+    padding: 10px;
+}
+
+table tr th{
+    text-align: start;
+    padding: 5px 10px;   
+}
+td>button{
+    padding: 5px;
+    width: auto;
+    font-size: 13px;
+}
+.logo{
+    position: absolute;
+    bottom: 10px;
+    right: 70%;
+}
+
+@media (max-width: 600px) {
+    
+}
+
+@media (min-width: 600px) {
+    
+}
+@media (min-width: 900px) {
+    .wrapper::after{
+        display: none;   
+    }
+    
+}
+@media (max-width: 900px) {
+    .wrapper::before{
+        display: none;   
+    }
+    .wrapper::after{
+        display: block;   
+    }
+    .row{
+        display: block;
+        flex-direction: row;
+    }
+    .row .col{
+        width: 100% !important;
+        display: block;
+        
+    }
+    
+}
+@media (min-width: 1200px) {
+
+}
